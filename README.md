@@ -10,6 +10,13 @@ docker build -t platform-image-dev .
 ```
 
 # Run the container
+First grab a presigned URL for the config zip file from S3, or host the zip file somewhere.
+
+Add the following line to `.env.docker-compose`
+```
+CONFIG_PATH='https://insert-url-here'
+```
+
 Run the container using docker-compose
 ```
 docker-compose up -d
