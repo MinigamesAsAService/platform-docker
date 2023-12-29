@@ -17,4 +17,4 @@ services:
           size: "12884901888"
     stdin_open: true
     tty: true
-    restart: no
+    restart: "no"
